@@ -23,7 +23,14 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box id="nav-menu">
+    <Box
+      id="nav-menu"
+      position="sticky"
+      top="0"
+      zIndex="100"
+      bg="white"
+      color={"black"}
+    >
       <Flex minWidth="max-content" p={5} alignItems="center" gap="30">
         <Box p="2">
           <Heading id="user-detail-name" size="md">
