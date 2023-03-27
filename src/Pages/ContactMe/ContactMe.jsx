@@ -1,7 +1,8 @@
 import React from "react";
+import { Box } from "@chakra-ui/react";
 
 const ContactMe = () => {
-  return <div id="contact">ContactMe</div>;
+  return <Box id="contact">ContactMe</Box>;
 };
 
 export default ContactMe;

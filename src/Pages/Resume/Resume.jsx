@@ -8,9 +8,12 @@ const Resume = () => {
         rel="opener"
         target="blank"
         href="Neeraj-Bisht-Resume.pdf"
-        download="neeraj-bisht-resume">
+        download="neeraj-bisht-resume"
+      >
         <Button colorScheme="blue">Download</Button>
       </a>
+
+      {/* <ResumeLink /> */}
     </div>
   );
 };

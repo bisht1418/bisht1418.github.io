@@ -1,5 +1,6 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
 
 export const Skills = () => {
-  return <div d="skills">Skills</div>;
+  return <Box id="skills">Skills</Box>;
 };

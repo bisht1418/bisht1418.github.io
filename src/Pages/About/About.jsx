@@ -1,10 +1,11 @@
 import React from "react";
+import { Container } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <div id="about" class="about section">
+    <Container id="about" className="about section">
       About
-    </div>
+    </Container>
   );
 };
 

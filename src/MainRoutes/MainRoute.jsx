@@ -9,11 +9,11 @@ import { Skills } from "../Pages/Skills/Skills";
 function MainRoute() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/skills" element={<Skills />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<ContactMe />} />
+      <Route path="/" element={<Home id="home" />} />
+      <Route path="/about" element={<About id="about" />} />
+      <Route path="/skills" element={<Skills id="skills" />} />
+      <Route path="/projects" element={<Projects id="projects" />} />
+      <Route path="/contact" element={<ContactMe id="contact" />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>
   );
