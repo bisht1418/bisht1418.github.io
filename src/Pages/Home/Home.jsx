@@ -5,18 +5,8 @@ import About from "../About/About";
 import { Skills } from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import ContactMe from "../ContactMe/ContactMe";
-import Resume from "../Resume/Resume";
 
 const Home = () => {
-  const sectionIds = [
-    "home",
-    "about",
-    "skills",
-    "projects",
-    "contact",
-    "resume",
-  ];
-
   return (
     <Box id="home">
       <Flex minWidth="max-content" gap="30">
@@ -26,7 +16,6 @@ const Home = () => {
       <Skills />
       <Projects />
       <ContactMe />
-      <Resume />
     </Box>
   );
 };

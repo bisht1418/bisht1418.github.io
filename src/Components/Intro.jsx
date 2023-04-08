@@ -7,11 +7,24 @@ import {
   Text,
   Button,
   Image,
+  useColorModeValue,
+  IconButton,
+  Link,
 } from "@chakra-ui/react";
+import {} from "@chakra-ui/react";
+import React from "react";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+
+import Resume from "../Pages/Resume/Resume";
 
 export default function Intro() {
   return (
-    <Container id="user-detail-intro" maxW={"7xl"}>
+    <Container
+      bg={useColorModeValue("gray.100", "gray.900")}
+      id="user-detail-intro"
+      maxW={"7xl"}
+      w={"100%"}
+    >
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -45,9 +58,43 @@ export default function Intro() {
               Full Stack Web Developer
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
-            Write the detail of fllu stack web development
-          </Text>
+          <Container>
+            <Text color={"gray.500"}>
+              A motivated Full Stack Developer with a strong desire to
+              constantly improve and learn new technologies
+            </Text>
+          </Container>
+
+          <Box>
+            <Link href="https://github.com/bisht1418">
+              <IconButton
+                aria-label="github"
+                variant="ghost"
+                size="lg"
+                fontSize="3xl"
+                icon={<BsGithub />}
+                _hover={{
+                  bg: "blue.500",
+                  color: useColorModeValue("white", "gray.700"),
+                }}
+                isRound
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/in/neeraj-bisht-96b265243/">
+              <IconButton
+                aria-label="linkedin"
+                variant="ghost"
+                size="lg"
+                icon={<BsLinkedin size="28px" />}
+                _hover={{
+                  bg: "blue.500",
+                  color: useColorModeValue("white", "gray.700"),
+                }}
+                isRound
+              />
+            </Link>
+          </Box>
+
           <Stack
             spacing={{ base: 4, sm: 6 }}
             justifyContent="center"
@@ -62,10 +109,10 @@ export default function Intro() {
               bg={"red.400"}
               _hover={{ bg: "red.500" }}
             >
-              Get started
+              <Resume />
             </Button>
             <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
-              How It Works
+              Hire Me
             </Button>
           </Stack>
         </Stack>
