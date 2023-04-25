@@ -14,7 +14,7 @@ function MainRoute() {
       <Route path="/skills" element={<Skills id="skills" />} />
       <Route path="/projects" element={<Projects id="projects" />} />
       <Route path="/contact" element={<ContactMe id="contact" />} />
-      <Route path="/resume" element={<Resume />} />
+      <Route path="/resume" element={<Resume id="resume-link-1" />} />
     </Routes>
   );
 }

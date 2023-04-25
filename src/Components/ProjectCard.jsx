@@ -1,68 +1,147 @@
 import {
-  Button,
-  Flex,
-  Heading,
+  Box,
   Image,
+  Badge,
   Stack,
-  Text,
-  useBreakpointValue,
+  Button,
+  Heading,
+  Flex,
+  Wrap,
 } from "@chakra-ui/react";
 
 export default function ProjectCard() {
+  const property = {
+    imageUrl: "ezyshop.png",
+    project: "Ezyshop",
+    group: true,
+    type: "E-commerce",
+    description:
+      "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
+    tags: ["React", "Redux", "Chakra-Ui", "Axios", "Firebase"],
+    link: {
+      github: "https://github.com/nrjrwt0/Instagram-clone",
+      deployed: "",
+      demo: "https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view",
+    },
+  };
+
   return (
-    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
-        <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text
-              as={"span"}
-              position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: useBreakpointValue({ base: "20%", md: "30%" }),
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "blue.400",
-                zIndex: -1,
-              }}
-            >
-              Freelance
-            </Text>
-            <br />{" "}
-            <Text color={"blue.400"} as={"span"}>
-              Design Projects
-            </Text>{" "}
-          </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            The project board is an exclusive resource for contract work. It's
-            perfect for freelancers, agencies, and moonlighters.
-          </Text>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+    <Box borderWidth="1px" borderRadius="10px" overflow="hidden">
+      <Image src={property.imageUrl} alt={property.imageAlt} />
+
+      <Box p="4">
+        <Box display="flex" alignItems="baseline">
+          <Badge fontSize="m" borderRadius="full" px="2" colorScheme="teal">
+            {property.project}
+          </Badge>
+          <Badge fontSize="m" borderRadius="full" px="2" colorScheme="red">
+            {property.type}
+          </Badge>
+          <Badge fontSize="m" borderRadius="full" px="2" colorScheme="blue">
+            {property.group ? "Collaborative" : "Individual"}
+          </Badge>
+        </Box>
+
+        <Box mt={1} display={"flex"}>
+          <Flex>
+            <Heading as="h6" size="sm" textAlign="left">
+              {property.description}
+            </Heading>
+          </Flex>
+        </Box>
+
+        <Box
+          mt="1"
+          fontWeight="semibold"
+          as="h4"
+          lineHeight="tight"
+          noOfLines={1}
+        >
+          {property.title}
+        </Box>
+
+        <Stack mt={1} direction="column">
+          <Wrap spacing={4}>
             <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500",
-              }}
+              colorScheme="teal"
+              variant="outline"
+              leftIcon={
+                <Image
+                  borderRadius="full"
+                  boxSize="30px"
+                  src="github.png"
+                  alt="git hub icon"
+                />
+              }
             >
-              Create Project
+              Github{" "}
             </Button>
-            <Button rounded={"full"}>How It Works</Button>
-          </Stack>
+            <Button
+              colorScheme="teal"
+              variant="outline"
+              leftIcon={
+                <Image
+                  borderRadius="full"
+                  boxSize="25px"
+                  src="link.png"
+                  alt="git hub icon"
+                />
+              }
+            >
+              Deployment{" "}
+            </Button>
+            <Button
+              colorScheme="teal"
+              variant="outline"
+              leftIcon={
+                <Image
+                  borderRadius="full"
+                  boxSize="25px"
+                  src="video.png"
+                  alt="git hub icon"
+                />
+              }
+            >
+              Demo{" "}
+            </Button>
+          </Wrap>
         </Stack>
-      </Flex>
-      <Flex flex={1}>
-        <Image
-          alt={"Login Image"}
-          objectFit={"cover"}
-          src={
-            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          }
-        />
-      </Flex>
-    </Stack>
+
+        {/* <Stack mt={5} direction={"row"} spacing={4}>
+          <Button
+            bg="teal.400"
+            flex={1}
+            fontSize={"sm"}
+            rounded={"full"}
+            _focus={{
+              bg: "teal.300",
+            }}
+            _hover={{
+              bg: "teal.300",
+            }}
+          >
+            Github
+          </Button>
+          <Button
+            flex={1}
+            fontSize={"sm"}
+            rounded={"full"}
+            bg={"blue.400"}
+            color={"white"}
+            boxShadow={
+              "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
+            }
+            _hover={{
+              bg: "blue.500",
+            }}
+            _focus={{
+              bg: "blue.500",
+            }}
+          >
+            Deployement
+          </Button>
+        </Stack> */}
+      </Box>
+    </Box>
   );
 }

@@ -20,7 +20,7 @@ import Resume from "../Pages/Resume/Resume";
 export default function Intro() {
   return (
     <Container
-      bg={useColorModeValue("gray.100", "gray.900")}
+      // bg={useColorModeValue("gray.100", "gray.900")}
       id="user-detail-intro"
       maxW={"7xl"}
       w={"100%"}

@@ -19,6 +19,8 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 import Theme from "../../Components/Theme";
 
+const name = " < Neeraj Singh Bisht />";
+
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -34,7 +36,7 @@ const NavBar = () => {
       <Flex minWidth="max-content" p={5} alignItems="center" gap="30">
         <Box p="2">
           <Heading id="user-detail-name" size="md">
-            Neeraj Singh Bisht
+            {name}
           </Heading>
         </Box>
         <Spacer />

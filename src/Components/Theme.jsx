@@ -3,6 +3,7 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export default function Theme() {
   const { colorMode, toggleColorMode } = useColorMode();
+  console.log(MoonIcon, SunIcon);
 
   return (
     <>
