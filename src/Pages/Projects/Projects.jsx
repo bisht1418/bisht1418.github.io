@@ -8,17 +8,16 @@ console.log(data);
 
 const Projects = () => {
   return (
-    <Box p={1} id="projects">
+    <Box mt={4} id="projects">
       <Heading pb="10px" lineHeight="tall">
         Project
       </Heading>
-      <SimpleGrid p={20} columns={[1, 1, 2]} spacing={10}>
-        <Box>
-          <ProjectCard />
-        </Box>
-        <Box>
-          <ProjectCard />
-        </Box>
+      <SimpleGrid p={20} mt={-15} columns={[1, 1, 2]} spacing={10}>
+        {data.map((ele) => (
+          <Box>
+            <ProjectCard {...ele} />
+          </Box>
+        ))}
       </SimpleGrid>
     </Box>
   );

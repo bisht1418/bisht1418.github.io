@@ -1,42 +1,58 @@
 [
     {
-      "projectName":"Ezyshop Clone",
-      "description": "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
-      "tags":["React","Redux", "Chakra-Ui", "Axios", "Firebase"],
-      "links": {
-        "github":"https://github.com/nrjrwt0/Instagram-clone",
-        "deployed":"",
-        "demo":"https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view"
+      "imageUrl": "ezyshop.png",
+      "project": "Ezyshop",
+      "group": true,
+      "type": "E-commerce",
+      "description":
+        "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
+      "tags": ["React", "Redux", "Chakra-Ui", "Axios", "Firebase"],
+      "link": {
+        "github": "https://github.com/nrjrwt0/Instagram-clone",
+        "deployed": "",
+        "demo": "https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view"
       }
     },
     {
-      "projectName":"Todo Manger",
-      "description": "Manage your to-do and its multiple subtasks and track the progress of each task.",
-      "tags":["React","Redux"],
-      "links": {
-        "github":"https://github.com/nrjrwt0/Redux-Thunks-Todo-Manager",
-        "deployed":"https://redux-thunks-todo-manager.vercel.app/",
-        "demo":""
+      "imageUrl": "weShopping.png",
+      "project": "we shopping",
+      "group": true,
+      "type": "E-commerce",
+      "description":
+        "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
+      "tags": ["HTML", "CSS", "JavaScript", "JSON"],
+      "link": {
+        "github": "https://github.com/nrjrwt0/Instagram-clone",
+        "deployed": "",
+        "demo": "https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view"
       }
     },
     {
-      "projectName":"Orbitz (Clone)",
-      "description": "Travel metasearch engine, a platform/agency that makes people book their travel journeys easier.",
-      "tags":["JavaScript","HTML","CSS"],
-      "links": {
-        "github":"https://github.com/nrjrwt0/Orbitz-clone",
-        "deployed":"https://nrjrwt0.github.io/Orbitz-clone/",
-        "demo":"https://drive.google.com/file/d/12ONq1JyluMBkDgz__g6_rHmYZ4fFLjoc/view?usp=sharing"
+      "imageUrl": "moneymanager.png",
+      "project": "money manager",
+      "group": false,
+      "type": "E-commerce",
+      "description":
+        "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
+      "tags": ["React", "Redux", "Chakra-Ui", "Axios"],
+      "link": {
+        "github": "https://github.com/nrjrwt0/Instagram-clone",
+        "deployed": "",
+        "demo": "https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view"
       }
     },
     {
-      "projectName":"Instagram",
-      "description": "A well-known social networking platform to interact and socialize with other users.",
-      "tags":["React","Redux","Express", "Node", "MongoDB"],
-      "links": {
-        "github":"https://github.com/nrjrwt0/Instagram-clone",
-        "deployed":"",
-        "demo":"https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view"
+      "imageUrl": "meanbuy.png",
+      "project": "mean buy",
+      "group": false,
+      "type": "E-commerce",
+      "description":
+        "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
+      "tags": ["HTML", "CSS", "JavaScript", "JSON"],
+      "link": {
+        "github": "https://github.com/nrjrwt0/Instagram-clone",
+        "deployed": "",
+        "demo": "https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view"
       }
     }
   ]

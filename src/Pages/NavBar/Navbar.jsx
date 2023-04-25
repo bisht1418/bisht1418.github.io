@@ -18,11 +18,17 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 import Theme from "../../Components/Theme";
+import { useColorMode } from "@chakra-ui/react";
 
 const name = " < Neeraj Singh Bisht />";
 
+console.log(useColorMode);
+
 const NavBar = () => {
+  const { colorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  console.log(colorMode);
 
   return (
     <Box
@@ -30,8 +36,8 @@ const NavBar = () => {
       position="sticky"
       top="0"
       zIndex="100"
-      bg="white"
-      color={"black"}
+      bg={colorMode === "light" ? "white" : "black"}
+      color={colorMode === "light" ? "black" : "white"}
     >
       <Flex minWidth="max-content" p={5} alignItems="center" gap="30">
         <Box p="2">

@@ -4,12 +4,13 @@ import {
   Badge,
   Stack,
   Button,
-  Heading,
   Flex,
   Wrap,
+  Text,
 } from "@chakra-ui/react";
 
-export default function ProjectCard() {
+export default function ProjectCard({ imageUrl }) {
+  console.log("image", imageUrl);
   const property = {
     imageUrl: "ezyshop.png",
     project: "Ezyshop",
@@ -31,22 +32,24 @@ export default function ProjectCard() {
 
       <Box p="4">
         <Box display="flex" alignItems="baseline">
-          <Badge fontSize="m" borderRadius="full" px="2" colorScheme="teal">
-            {property.project}
-          </Badge>
-          <Badge fontSize="m" borderRadius="full" px="2" colorScheme="red">
-            {property.type}
-          </Badge>
-          <Badge fontSize="m" borderRadius="full" px="2" colorScheme="blue">
-            {property.group ? "Collaborative" : "Individual"}
-          </Badge>
+          <Wrap>
+            <Badge fontSize="m" borderRadius="full" px="2" colorScheme="teal">
+              {property.project}
+            </Badge>
+            <Badge fontSize="m" borderRadius="full" px="2" colorScheme="red">
+              {property.type}
+            </Badge>
+            <Badge fontSize="m" borderRadius="full" px="2" colorScheme="blue">
+              {property.group ? "Collaborative" : "Individual"}
+            </Badge>
+          </Wrap>
         </Box>
 
-        <Box mt={1} display={"flex"}>
+        <Box mt={3} mb={3} display={"flex"}>
           <Flex>
-            <Heading as="h6" size="sm" textAlign="left">
+            <Text as="p" size="sm" textAlign="left">
               {property.description}
-            </Heading>
+            </Text>
           </Flex>
         </Box>
 
@@ -60,7 +63,15 @@ export default function ProjectCard() {
           {property.title}
         </Box>
 
-        <Stack mt={1} direction="column">
+        <Wrap spacing={4} className="wrap-horizontal">
+          {property.tags.map((ele) => (
+            <Button key={ele} colorScheme="red" variant="outline">
+              {ele}
+            </Button>
+          ))}
+        </Wrap>
+
+        <Stack mt={3} direction="column">
           <Wrap spacing={4}>
             <Button
               colorScheme="teal"
