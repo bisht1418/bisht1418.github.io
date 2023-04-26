@@ -111,9 +111,9 @@ export default function Intro() {
               _hover={{ bg: "red.500" }}
             >
               <Box p="2">
-                <Button colorScheme="black" variant="link" id="resume-button-1">
+                <Button colorScheme="black" variant="link" id="resume-button-2">
                   <a
-                    id="resume-link-1"
+                    id="resume-link-2"
                     className="nav-link resume"
                     onClick={() => window.open("Neeraj-Bisht-Resume.pdf")}
                     target="_blank"

@@ -144,10 +144,10 @@ const NavBar = () => {
                     <Button
                       colorScheme="black"
                       variant="link"
-                      id="resume-button-1"
+                      id="resume-button-2"
                     >
                       <a
-                        id="resume-link-1"
+                        id="resume-link-2"
                         className="nav-link resume"
                         onClick={() => window.open("Neeraj-Bisht-Resume.pdf")}
                         target="_blank"
