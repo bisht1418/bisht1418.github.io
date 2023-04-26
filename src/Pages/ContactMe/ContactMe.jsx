@@ -5,7 +5,7 @@ import Contact from "../../Components/Contact";
 const ContactMe = () => {
   return (
     <Box id="contact">
-      <Contact />
+      <Contact id="contact-linkedin" />
     </Box>
   );
 };

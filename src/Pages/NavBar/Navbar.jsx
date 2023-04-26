@@ -22,8 +22,6 @@ import { useColorMode } from "@chakra-ui/react";
 
 const name = " < Neeraj Singh Bisht />";
 
-console.log(useColorMode);
-
 const NavBar = () => {
   const { colorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -36,7 +34,7 @@ const NavBar = () => {
       position="sticky"
       top="0"
       zIndex="100"
-      bg={colorMode === "light" ? "white" : "black"}
+      bg={colorMode === "light" ? "white" : "#1d2022"}
       color={colorMode === "light" ? "black" : "white"}
     >
       <Flex minWidth="max-content" p={5} alignItems="center" gap="30">
@@ -84,10 +82,17 @@ const NavBar = () => {
               </Button>
             </Box>
             <Box p="2">
-              <Button colorScheme="black" variant="link">
-                <NavLink className="nav-link resume" to="/resume">
+              <Button colorScheme="black" variant="link" id="resume-button-1">
+                <a
+                  id="resume-link-1"
+                  className="nav-link resume"
+                  onClick={() => window.open("Neeraj-Bisht-Resume.pdf")}
+                  target="_blank"
+                  href="Neeraj-Bisht-Resume.pdf"
+                  download
+                >
                   Resume
-                </NavLink>
+                </a>
               </Button>
             </Box>
             <Box>
@@ -136,8 +141,21 @@ const NavBar = () => {
                     </Button>
                   </Box>
                   <Box p="2">
-                    <Button colorScheme="teal" variant="link" onClick={onClose}>
-                      <NavLink to="/resume">Resume</NavLink>
+                    <Button
+                      colorScheme="black"
+                      variant="link"
+                      id="resume-button-1"
+                    >
+                      <a
+                        id="resume-link-1"
+                        className="nav-link resume"
+                        onClick={() => window.open("Neeraj-Bisht-Resume.pdf")}
+                        target="_blank"
+                        href="Neeraj-Bisht-Resume.pdf"
+                        download
+                      >
+                        Resume
+                      </a>
                     </Button>
                   </Box>
                   <Box p="2">

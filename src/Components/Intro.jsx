@@ -15,16 +15,9 @@ import {} from "@chakra-ui/react";
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
-import Resume from "../Pages/Resume/Resume";
-
 export default function Intro() {
   return (
-    <Container
-      // bg={useColorModeValue("gray.100", "gray.900")}
-      id="user-detail-intro"
-      maxW={"7xl"}
-      w={"100%"}
-    >
+    <Container id="user-detail-intro" maxW={"7xl"} w={"100%"}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -54,12 +47,17 @@ export default function Intro() {
               Hi, I'am Neeraj 👋
             </Text>
             <br />
-            <Text fontSize="3xl" as={"span"} color={"red.400"}>
+            <Text
+              id="user-detail-intro"
+              fontSize="3xl"
+              as={"span"}
+              color={"red.400"}
+            >
               Full Stack Web Developer
             </Text>
           </Heading>
           <Container>
-            <Text fontSize="xl">
+            <Text id="user-detail-intro" fontSize="xl">
               A motivated Full Stack Developer with a strong desire to
               constantly improve and learn new technologies
             </Text>
@@ -112,7 +110,20 @@ export default function Intro() {
               bg={"red.400"}
               _hover={{ bg: "red.500" }}
             >
-              <Resume />
+              <Box p="2">
+                <Button colorScheme="black" variant="link" id="resume-button-1">
+                  <a
+                    id="resume-link-1"
+                    className="nav-link resume"
+                    onClick={() => window.open("Neeraj-Bisht-Resume.pdf")}
+                    target="_blank"
+                    href="Neeraj-Bisht-Resume.pdf"
+                    download
+                  >
+                    Resume
+                  </a>
+                </Button>
+              </Box>
             </Button>
             <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
               Hire Me

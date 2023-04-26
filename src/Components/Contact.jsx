@@ -53,7 +53,7 @@ export default function Contact() {
         m={{ base: 5, md: 16, lg: 10 }}
         p={{ base: 5, lg: 16 }}
       >
-        <Box>
+        <Box id="contact-linkedin">
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
             <Heading
               fontSize={{
@@ -93,7 +93,7 @@ export default function Contact() {
                   />
                 </Tooltip>
 
-                <Link id="contact-github" href="https://github.com/bisht1418">
+                <Link id="contact-linkedin" href="https://github.com/bisht1418">
                   <IconButton
                     aria-label="github"
                     variant="ghost"
@@ -109,7 +109,7 @@ export default function Contact() {
                 </Link>
 
                 <Link
-                  id="contact-github"
+                  id="contact-linkedin"
                   href="https://twitter.com/bishtnrj1418"
                 >
                   <IconButton
