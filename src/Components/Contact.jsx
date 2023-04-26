@@ -39,6 +39,7 @@ export default function Contact() {
 
   return (
     <Flex
+      id="contact"
       bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"
