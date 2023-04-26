@@ -46,14 +46,13 @@ export default function Contact() {
         backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
         backgroundAttachment: "fixed",
       }}
-      id="contact"
     >
       <Box
         borderRadius="lg"
         m={{ base: 5, md: 16, lg: 10 }}
         p={{ base: 5, lg: 16 }}
       >
-        <Box id="contact-linkedin">
+        <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
             <Heading
               fontSize={{
@@ -93,7 +92,7 @@ export default function Contact() {
                   />
                 </Tooltip>
 
-                <Link id="contact-linkedin" href="https://github.com/bisht1418">
+                <Link id="contact-github" href="https://github.com/bisht1418">
                   <IconButton
                     aria-label="github"
                     variant="ghost"
@@ -108,10 +107,7 @@ export default function Contact() {
                   />
                 </Link>
 
-                <Link
-                  id="contact-linkedin"
-                  href="https://twitter.com/bishtnrj1418"
-                >
+                <Link href="https://twitter.com/bishtnrj1418">
                   <IconButton
                     aria-label="twitter"
                     variant="ghost"
@@ -126,7 +122,7 @@ export default function Contact() {
                 </Link>
 
                 <Link
-                  id="contact-github"
+                  id="contact-linkedin"
                   href="https://www.linkedin.com/in/neeraj-bisht-96b265243/"
                 >
                   <IconButton

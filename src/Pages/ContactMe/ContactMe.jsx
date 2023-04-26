@@ -4,8 +4,8 @@ import Contact from "../../Components/Contact";
 
 const ContactMe = () => {
   return (
-    <Box id="contact">
-      <Contact id="contact-linkedin" />
+    <Box>
+      <Contact id="contact" />
     </Box>
   );
 };

@@ -55,33 +55,35 @@ const NavBar = () => {
             </Box>
             <Box p="2">
               <Button colorScheme="black" variant="link">
-                <NavLink className="nav-link about" to="/about">
+                <a className="nav-link about" href="#about">
                   About
-                </NavLink>
+                </a>
               </Button>
             </Box>
             <Box p="2">
               <Button colorScheme="black" variant="link">
-                <NavLink className="nav-link skills" to="/skills">
+                <a className="nav-link skills" href="#skills">
                   Skills
-                </NavLink>
+                </a>
               </Button>
             </Box>
             <Box p="2">
               <Button colorScheme="black" variant="link">
-                <NavLink className="nav-link projects" to="/projects">
+                {/* <NavLink className="nav-link projects" to="/projects"> */}
+                <a className="nav-link projects" href="#projects">
                   Projects
-                </NavLink>
+                </a>
+                {/* </NavLink> */}
               </Button>
             </Box>
             <Box p="2">
               <Button colorScheme="black" variant="link">
-                <NavLink className="nav-link contact" to="/contact">
+                <a className="nav-link contact" href="#contact">
                   Contact
-                </NavLink>
+                </a>
               </Button>
             </Box>
-            <Box p="2">
+            <Box id="resume-button-1" p="2">
               <Button colorScheme="black" variant="link" id="resume-button-1">
                 <a
                   id="resume-link-1"
