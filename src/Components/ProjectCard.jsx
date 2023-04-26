@@ -23,10 +23,16 @@ export default function ProjectCard({
     <Box id="projects" borderWidth="1px" borderRadius="10px" overflow="hidden">
       <Image src={imageUrl} alt={imageUrl} />
 
-      <Box p="4">
+      <Box className="project-card" p="4">
         <Box display="flex" alignItems="baseline">
           <Wrap>
-            <Badge fontSize="m" borderRadius="full" px="2" colorScheme="teal">
+            <Badge
+              className="project-title"
+              fontSize="m"
+              borderRadius="full"
+              px="2"
+              colorScheme="teal"
+            >
               {project}
             </Badge>
             <Badge fontSize="m" borderRadius="full" px="2" colorScheme="red">
@@ -38,9 +44,14 @@ export default function ProjectCard({
           </Wrap>
         </Box>
 
-        <Box mt={3} mb={3} display={"flex"}>
+        <Box className="project-description" mt={3} mb={3} display={"flex"}>
           <Flex>
-            <Text as="p" size="sm" textAlign="left">
+            <Text
+              className="project-description"
+              as="p"
+              size="sm"
+              textAlign="left"
+            >
               {description}
             </Text>
           </Flex>
@@ -48,7 +59,12 @@ export default function ProjectCard({
 
         <Wrap spacing={4} className="wrap-horizontal">
           {tags.map((ele) => (
-            <Button key={ele} colorScheme="red" variant="outline">
+            <Button
+              className="project-tech-stack"
+              key={ele}
+              colorScheme="red"
+              variant="outline"
+            >
               {ele}
             </Button>
           ))}
@@ -69,7 +85,11 @@ export default function ProjectCard({
                   />
                 }
               >
-                <Link href={ele.link} isExternal>
+                <Link
+                  className="project-github-link project-deployed-link"
+                  href={ele.link}
+                  isExternal
+                >
                   {ele.name}
                 </Link>
               </Button>
