@@ -14,7 +14,7 @@ const Projects = () => {
       </Heading>
       <SimpleGrid p={20} mt={-15} columns={[1, 1, 2]} spacing={10}>
         {data.map((ele) => (
-          <Box>
+          <Box mb={5}>
             <ProjectCard {...ele} />
           </Box>
         ))}

@@ -7,40 +7,33 @@ import {
   Flex,
   Wrap,
   Text,
+  Link,
 } from "@chakra-ui/react";
 
-export default function ProjectCard({ imageUrl }) {
-  console.log("image", imageUrl);
-  const property = {
-    imageUrl: "ezyshop.png",
-    project: "Ezyshop",
-    group: true,
-    type: "E-commerce",
-    description:
-      "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
-    tags: ["React", "Redux", "Chakra-Ui", "Axios", "Firebase"],
-    link: {
-      github: "https://github.com/nrjrwt0/Instagram-clone",
-      deployed: "",
-      demo: "https://drive.google.com/file/d/1DsIq6dQwQA_-iR6oth2O1pssf8kv7z6v/view",
-    },
-  };
-
+export default function ProjectCard({
+  imageUrl,
+  project,
+  group,
+  type,
+  description,
+  tags,
+  linkName,
+}) {
   return (
     <Box borderWidth="1px" borderRadius="10px" overflow="hidden">
-      <Image src={property.imageUrl} alt={property.imageAlt} />
+      <Image src={imageUrl} alt={imageUrl} />
 
       <Box p="4">
         <Box display="flex" alignItems="baseline">
           <Wrap>
             <Badge fontSize="m" borderRadius="full" px="2" colorScheme="teal">
-              {property.project}
+              {project}
             </Badge>
             <Badge fontSize="m" borderRadius="full" px="2" colorScheme="red">
-              {property.type}
+              {type}
             </Badge>
             <Badge fontSize="m" borderRadius="full" px="2" colorScheme="blue">
-              {property.group ? "Collaborative" : "Individual"}
+              {group ? "Collaborative" : "Individual"}
             </Badge>
           </Wrap>
         </Box>
@@ -48,23 +41,13 @@ export default function ProjectCard({ imageUrl }) {
         <Box mt={3} mb={3} display={"flex"}>
           <Flex>
             <Text as="p" size="sm" textAlign="left">
-              {property.description}
+              {description}
             </Text>
           </Flex>
         </Box>
 
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          noOfLines={1}
-        >
-          {property.title}
-        </Box>
-
         <Wrap spacing={4} className="wrap-horizontal">
-          {property.tags.map((ele) => (
+          {tags.map((ele) => (
             <Button key={ele} colorScheme="red" variant="outline">
               {ele}
             </Button>
@@ -73,85 +56,26 @@ export default function ProjectCard({ imageUrl }) {
 
         <Stack mt={3} direction="column">
           <Wrap spacing={4}>
-            <Button
-              colorScheme="teal"
-              variant="outline"
-              leftIcon={
-                <Image
-                  borderRadius="full"
-                  boxSize="30px"
-                  src="github.png"
-                  alt="git hub icon"
-                />
-              }
-            >
-              Github{" "}
-            </Button>
-            <Button
-              colorScheme="teal"
-              variant="outline"
-              leftIcon={
-                <Image
-                  borderRadius="full"
-                  boxSize="25px"
-                  src="link.png"
-                  alt="git hub icon"
-                />
-              }
-            >
-              Deployment{" "}
-            </Button>
-            <Button
-              colorScheme="teal"
-              variant="outline"
-              leftIcon={
-                <Image
-                  borderRadius="full"
-                  boxSize="25px"
-                  src="video.png"
-                  alt="git hub icon"
-                />
-              }
-            >
-              Demo{" "}
-            </Button>
+            {linkName.map((ele) => (
+              <Button
+                colorScheme="teal"
+                variant="outline"
+                leftIcon={
+                  <Image
+                    borderRadius="full"
+                    boxSize="30px"
+                    src={ele.img}
+                    alt={ele.img}
+                  />
+                }
+              >
+                <Link href={ele.link} isExternal>
+                  {ele.name}
+                </Link>
+              </Button>
+            ))}
           </Wrap>
         </Stack>
-
-        {/* <Stack mt={5} direction={"row"} spacing={4}>
-          <Button
-            bg="teal.400"
-            flex={1}
-            fontSize={"sm"}
-            rounded={"full"}
-            _focus={{
-              bg: "teal.300",
-            }}
-            _hover={{
-              bg: "teal.300",
-            }}
-          >
-            Github
-          </Button>
-          <Button
-            flex={1}
-            fontSize={"sm"}
-            rounded={"full"}
-            bg={"blue.400"}
-            color={"white"}
-            boxShadow={
-              "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-            }
-            _hover={{
-              bg: "blue.500",
-            }}
-            _focus={{
-              bg: "blue.500",
-            }}
-          >
-            Deployement
-          </Button>
-        </Stack> */}
       </Box>
     </Box>
   );

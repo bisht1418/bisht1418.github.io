@@ -59,14 +59,14 @@ export default function Intro() {
             </Text>
           </Heading>
           <Container>
-            <Text color={"gray.500"}>
+            <Text fontSize="xl">
               A motivated Full Stack Developer with a strong desire to
               constantly improve and learn new technologies
             </Text>
           </Container>
 
           <Box>
-            <Link href="https://github.com/bisht1418">
+            <Link href="https://github.com/bisht1418" isExternal>
               <IconButton
                 aria-label="github"
                 variant="ghost"
@@ -80,7 +80,10 @@ export default function Intro() {
                 isRound
               />
             </Link>
-            <Link href="https://www.linkedin.com/in/neeraj-bisht-96b265243/">
+            <Link
+              href="https://www.linkedin.com/in/neeraj-bisht-96b265243/"
+              isExternal
+            >
               <IconButton
                 aria-label="linkedin"
                 variant="ghost"
