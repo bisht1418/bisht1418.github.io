@@ -37,8 +37,11 @@ export default function Intro() {
           </Heading>
           <Container>
             <Text fontSize="xl">
-              A motivated Full Stack Developer with a strong desire to
-              constantly improve and learn new technologies
+              As a motivated Full Stack Developer, I am passionate about
+              creating high-quality software solutions that meet the needs of
+              clients and end-users. With a strong desire to constantly improve
+              and learn new technologies, I strive to stay up-to-date with the
+              latest trends and best practices in the field.
             </Text>
           </Container>
 
@@ -85,9 +88,9 @@ export default function Intro() {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              colorScheme={"red"}
+              colorScheme={"red.400"}
               bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              _hover={{ bg: "red.300" }}
             >
               <Box p="2">
                 <Button colorScheme="black" variant="link" id="resume-button-2">
@@ -128,7 +131,7 @@ export default function Intro() {
               className="home-img"
               alt={"Neeraj-Singh-Bisht"}
               fit={"cover"}
-              align={"center"}
+              align={"botton"}
               w={"100%"}
               h={"100%"}
               src=" https://avatars.githubusercontent.com/u/112753461?v=4"
