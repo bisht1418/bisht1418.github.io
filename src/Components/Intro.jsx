@@ -109,8 +109,10 @@ export default function Intro() {
 
         <GridItem>
           <Img
+            rounded={"3xl"}
+            boxShadow={"5xl"}
             className="home-img"
-            src={"https://avatars.githubusercontent.com/u/112753461?v=4"}
+            src={"programmer01.avif"}
             alt="React Logo"
             height={"100%"}
             width={"100%"}

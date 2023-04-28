@@ -10,7 +10,7 @@ import {
 
 export default function About() {
   return (
-    <Box id="about" mt={20}>
+    <Box id="about" mt={20} className="about section">
       <Heading style={{ textAlign: "center" }}>{`{ About Me }`}</Heading>
 
       <Stack
