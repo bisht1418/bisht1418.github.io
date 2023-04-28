@@ -29,7 +29,7 @@ export default function Intro() {
             </Text>
 
             <Text color={"teal"} fontWeight={700}>
-              I, Am Neeraj Singh Bisht
+              I,m Neeraj Singh Bisht
             </Text>
 
             <Text color={"red.400"} fontWeight={700} marginBottom="10px">
@@ -38,7 +38,7 @@ export default function Intro() {
           </Box>
 
           <Box>
-            <Text fontSize={20} mb={"10px"} color={"black"}>
+            <Text fontSize={20} mb={"10px"}>
               As a motivated Full Stack Developer, I am passionate about
               creating high-quality software solutions that meet the needs of
               clients and end-users. With a strong desire to constantly improve
@@ -109,6 +109,7 @@ export default function Intro() {
 
         <GridItem>
           <Img
+            className="home-img"
             src={"https://avatars.githubusercontent.com/u/112753461?v=4"}
             alt="React Logo"
             height={"100%"}
