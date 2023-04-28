@@ -26,8 +26,6 @@ const NavBar = () => {
   const { colorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  console.log(colorMode);
-
   return (
     <Box
       id="nav-menu"
@@ -48,9 +46,9 @@ const NavBar = () => {
           <Flex alignItems="center" gap="10">
             <Box p="2">
               <Button colorScheme="black" variant="link">
-                <NavLink className="nav-link home" to="/">
+                <a className="nav-link home" href="#home">
                   Home
-                </NavLink>
+                </a>
               </Button>
             </Box>
             <Box p="2">

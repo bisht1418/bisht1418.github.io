@@ -39,7 +39,7 @@ export default function Contact() {
 
   return (
     <Flex
-      id="contact"
+      // id="contact"
       className="nav-link contact"
       bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
@@ -95,7 +95,11 @@ export default function Contact() {
                   />
                 </Tooltip>
 
-                <Link id="contact-github" href="https://github.com/bisht1418">
+                <Link
+                  id="contact-github"
+                  href="https://github.com/bisht1418"
+                  isExternal
+                >
                   <IconButton
                     aria-label="github"
                     variant="ghost"
@@ -110,12 +114,16 @@ export default function Contact() {
                   />
                 </Link>
 
-                <Link href="https://twitter.com/bishtnrj1418">
+                <Link
+                  id="contact-linkedin"
+                  href="https://www.linkedin.com/in/neeraj-bisht-96b265243/"
+                  isExternal
+                >
                   <IconButton
-                    aria-label="twitter"
+                    aria-label="linkedin"
                     variant="ghost"
                     size="lg"
-                    icon={<BsTwitter size="28px" />}
+                    icon={<BsLinkedin size="28px" />}
                     _hover={{
                       bg: "blue.500",
                       color: useColorModeValue("white", "gray.700"),
@@ -124,15 +132,12 @@ export default function Contact() {
                   />
                 </Link>
 
-                <Link
-                  id="contact-linkedin"
-                  href="https://www.linkedin.com/in/neeraj-bisht-96b265243/"
-                >
+                <Link href="https://twitter.com/bishtnrj1418" isExternal>
                   <IconButton
-                    aria-label="linkedin"
+                    aria-label="twitter"
                     variant="ghost"
                     size="lg"
-                    icon={<BsLinkedin size="28px" />}
+                    icon={<BsTwitter size="28px" />}
                     _hover={{
                       bg: "blue.500",
                       color: useColorModeValue("white", "gray.700"),

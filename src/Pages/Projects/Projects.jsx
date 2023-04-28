@@ -5,8 +5,6 @@ import { Heading, Box } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import Github from "../../Components/Github";
 
-console.log(data);
-
 const Projects = () => {
   return (
     <Box id="projects">

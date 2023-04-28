@@ -12,10 +12,10 @@ const Home = () => {
       <Flex minWidth="max-content" gap="30">
         <Intro id="user-detail-intro" />
       </Flex>
-      <About />
-      <Skills />
-      <Projects />
-      <ContactMe />
+      <About id="about" />
+      <Skills id="skills" />
+      <Projects id="projects" />
+      <ContactMe id="contact" />
     </Box>
   );
 };
