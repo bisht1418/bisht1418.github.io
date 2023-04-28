@@ -20,7 +20,13 @@ export default function ProjectCard({
   linkName,
 }) {
   return (
-    <Box id="projects" borderWidth="1px" borderRadius="10px" overflow="hidden">
+    <Box
+      mt={-10}
+      id="projects"
+      borderWidth="1px"
+      borderRadius="10px"
+      overflow="hidden"
+    >
       <Image src={imageUrl} alt={imageUrl} />
 
       <Box className="project-card" p="4">

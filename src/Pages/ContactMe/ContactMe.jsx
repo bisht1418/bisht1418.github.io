@@ -4,8 +4,9 @@ import Contact from "../../Components/Contact";
 
 const ContactMe = () => {
   return (
-    <Box>
+    <Box mt={-50}>
       <Contact id="contact" />
+      <hr />
     </Box>
   );
 };

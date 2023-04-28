@@ -1,12 +1,12 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
-// import MySkills from "../../Components/MySkills";
+import MySkills from "../../Components/MySkills";
 
 export const Skills = () => {
   return (
-    <Box id="skills">
-      <Heading>Skills</Heading>
-      {/* <MySkills /> */}
+    <Box mt={10} mb={20} id="skills">
+      <Heading>{`{ Skills }`}</Heading>
+      <MySkills />
     </Box>
   );
 };

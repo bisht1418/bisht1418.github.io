@@ -49,6 +49,7 @@ export default function Contact() {
         backgroundAttachment: "fixed",
       }}
     >
+      <hr />
       <Box
         borderRadius="lg"
         m={{ base: 5, md: 16, lg: 10 }}
@@ -62,7 +63,7 @@ export default function Contact() {
                 md: "5xl",
               }}
             >
-              Get in Touch
+              {`{ Get in Touch }`}
             </Heading>
 
             <Stack

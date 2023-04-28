@@ -1,10 +1,13 @@
 import React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 
 const About = () => {
   return (
     <Box id="about" className="about section">
-      About
+      <Heading pb="10px" lineHeight="tall">
+        {`{ About Me }`}
+      </Heading>
+      <hr />
     </Box>
   );
 };
