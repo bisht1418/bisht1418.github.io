@@ -1,98 +1,95 @@
-import {
-  Container,
-  Stack,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Button,
-  Image,
-  useColorModeValue,
-  IconButton,
-  Link,
-} from "@chakra-ui/react";
+import { useColorModeValue, IconButton, Link } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Img, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function Intro() {
   return (
-    <Container mt={10} maxW={"5xl"} w={"100%"}>
-      <Stack
-        align={"center"}
-        spacing={{ base: 10, md: 5 }}
-        py={{ base: 10, md: 10 }}
-        direction={{ base: "column", md: "row" }}
+    <Box
+      mt={10}
+      display="flex"
+      alignItems={"center"}
+      height={{ sm: "auto", md: "90vh" }}
+      p={{ base: "0px 30px", md: "0px 70px" }}
+      pt={{ base: "50px", md: "0px" }}
+      id="home"
+    >
+      <Grid
+        gridTemplateColumns={{ sm: "repeat(1,1fr)", md: "repeat(2,1fr)" }}
+        gap={"50px"}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading
-            lineHeight={1.1}
-            fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
-          >
-            <Text id="user-detail-name">Hi, I'am Neeraj 👋</Text>
-            {/* <br /> */}
-            <Text fontSize="3xl" as={"span"} color={"red.400"}>
+        <GridItem
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+        >
+          <Box id="user-detail-name" fontSize={"35px"}>
+            <Text fontWeight={700} display="inline">
+              Hello 👋
+            </Text>
+
+            <Text color={"teal"} fontWeight={700}>
+              I, Am Neeraj Singh Bisht
+            </Text>
+
+            <Text color={"red.400"} fontWeight={700} marginBottom="10px">
               Full Stack Web Developer
             </Text>
-          </Heading>
-          <Container>
-            <Text fontSize="xl">
+          </Box>
+
+          <Box>
+            <Text fontSize={20} mb={"10px"} color={"black"}>
               As a motivated Full Stack Developer, I am passionate about
               creating high-quality software solutions that meet the needs of
               clients and end-users. With a strong desire to constantly improve
               and learn new technologies, I strive to stay up-to-date with the
               latest trends and best practices in the field.
             </Text>
-          </Container>
 
-          <Box>
-            <Link href="https://github.com/bisht1418" isExternal>
-              <IconButton
-                aria-label="github"
-                variant="ghost"
-                size="lg"
-                fontSize="3xl"
-                icon={<BsGithub />}
-                _hover={{
-                  bg: "blue.500",
-                  color: useColorModeValue("white", "gray.700"),
-                }}
-                isRound
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/neeraj-bisht-96b265243/"
-              isExternal
-            >
-              <IconButton
-                aria-label="linkedin"
-                variant="ghost"
-                size="lg"
-                icon={<BsLinkedin size="28px" />}
-                _hover={{
-                  bg: "blue.500",
-                  color: useColorModeValue("white", "gray.700"),
-                }}
-                isRound
-              />
-            </Link>
-          </Box>
+            <Box style={{ textAlign: "start" }}>
+              <Link href="https://github.com/bisht1418" isExternal>
+                <IconButton
+                  aria-label="github"
+                  variant="ghost"
+                  size="lg"
+                  fontSize="3xl"
+                  icon={<BsGithub />}
+                  _hover={{
+                    bg: "blue.500",
+                    color: useColorModeValue("white", "gray.700"),
+                  }}
+                  isRound
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/neeraj-bisht-96b265243/"
+                isExternal
+              >
+                <IconButton
+                  aria-label="linkedin"
+                  variant="ghost"
+                  size="lg"
+                  icon={<BsLinkedin size="28px" />}
+                  _hover={{
+                    bg: "blue.500",
+                    color: useColorModeValue("white", "gray.700"),
+                  }}
+                  isRound
+                />
+              </Link>
+            </Box>
 
-          <Stack
-            spacing={{ base: 4, sm: 6 }}
-            justifyContent="center"
-            direction={{ base: "column", sm: "row" }}
-          >
             <Button
+              mt={2}
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              colorScheme={"red.400"}
-              bg={"red.400"}
-              _hover={{ bg: "red.300" }}
+              color={"black"}
+              bg={"teal.400"}
+              _hover={{ bg: "teal.300" }}
             >
-              <Box p="2">
+              <Box>
                 <Button colorScheme="black" variant="link" id="resume-button-2">
                   <a
                     id="resume-link-2"
@@ -107,38 +104,19 @@ export default function Intro() {
                 </Button>
               </Box>
             </Button>
-            <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
-              Hire Me
-            </Button>
-          </Stack>
-        </Stack>
-        <Flex
-          flex={1}
-          justify={"center"}
-          align={"center"}
-          position={"relative"}
-          w={"full"}
-        >
-          <Box
-            position={"relative"}
-            height={"50%"}
-            rounded={"2xl"}
-            boxShadow={"2xl"}
-            width={"60%"}
-            overflow={"hidden"}
-          >
-            <Image
-              className="home-img"
-              alt={"Neeraj-Singh-Bisht"}
-              fit={"cover"}
-              align={"botton"}
-              w={"100%"}
-              h={"100%"}
-              src=" https://avatars.githubusercontent.com/u/112753461?v=4"
-            />
           </Box>
-        </Flex>
-      </Stack>
-    </Container>
+        </GridItem>
+
+        <GridItem>
+          <Img
+            src={"https://avatars.githubusercontent.com/u/112753461?v=4"}
+            alt="React Logo"
+            height={"100%"}
+            width={"100%"}
+          />
+        </GridItem>
+      </Grid>
+    </Box>
+    // </Container>
   );
 }

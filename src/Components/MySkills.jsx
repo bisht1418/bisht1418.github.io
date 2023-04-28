@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Text, Grid, GridItem, Image } from "@chakra-ui/react";
+import {
+  Container,
+  Text,
+  Grid,
+  GridItem,
+  Image,
+  Heading,
+} from "@chakra-ui/react";
 import { IoLogoJavascript } from "react-icons/io";
 import { GrNode } from "react-icons/gr";
 
@@ -16,6 +23,7 @@ const MySkills = () => {
   return (
     <div mt={10} id="skills">
       <Container maxW={"4xl"}>
+        <Heading style={{ textAlign: "center" }}>{`{ Skills }`}</Heading>
         <Grid
           className="skills-card"
           marginTop={10}

@@ -8,7 +8,7 @@ import Github from "../../Components/Github";
 const Projects = () => {
   return (
     <Box id="projects">
-      <Heading pb="10px" lineHeight="tall">
+      <Heading style={{ textAlign: "center" }} pb="10px" lineHeight="tall">
         {`{ Projects }`}
       </Heading>
       <SimpleGrid p={20} mt={-15} columns={[1, 1, 2]} spacing={10}>

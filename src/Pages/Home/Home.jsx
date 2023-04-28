@@ -9,7 +9,7 @@ import ContactMe from "../ContactMe/ContactMe";
 const Home = () => {
   return (
     <Box id="home">
-      <Flex minWidth="max-content" gap="30">
+      <Flex>
         <Intro />
       </Flex>
       <About />
