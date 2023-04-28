@@ -4,7 +4,7 @@ import MySkills from "../../Components/MySkills";
 
 export const Skills = () => {
   return (
-    <Box mt={10} mb={20} id="skills">
+    <Box mt={10} mb={20}>
       <Heading>{`{ Skills }`}</Heading>
       <MySkills />
     </Box>

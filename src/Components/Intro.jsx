@@ -16,10 +16,10 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function Intro() {
   return (
-    <Container id="user-detail-intro" maxW={"5xl"} w={"100%"}>
+    <Container mt={10} maxW={"5xl"} w={"100%"}>
       <Stack
         align={"center"}
-        spacing={{ base: 10, md: 10 }}
+        spacing={{ base: 10, md: 5 }}
         py={{ base: 10, md: 10 }}
         direction={{ base: "column", md: "row" }}
       >
@@ -29,19 +29,14 @@ export default function Intro() {
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
-            <Text>Hi, I'am Neeraj 👋</Text>
+            <Text id="user-detail-name">Hi, I'am Neeraj 👋</Text>
             {/* <br /> */}
-            <Text
-              id="user-detail-intro"
-              fontSize="3xl"
-              as={"span"}
-              color={"red.400"}
-            >
+            <Text fontSize="3xl" as={"span"} color={"red.400"}>
               Full Stack Web Developer
             </Text>
           </Heading>
           <Container>
-            <Text id="user-detail-intro" fontSize="xl">
+            <Text fontSize="xl">
               A motivated Full Stack Developer with a strong desire to
               constantly improve and learn new technologies
             </Text>

@@ -14,7 +14,7 @@ import {
 
 const MySkills = () => {
   return (
-    <div id="skills">
+    <div mt={10} id="skills">
       <Container maxW={"4xl"}>
         <Grid
           className="skills-card"

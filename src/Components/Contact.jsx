@@ -39,8 +39,7 @@ export default function Contact() {
 
   return (
     <Flex
-      // id="contact"
-      className="nav-link contact"
+      id="contact"
       bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"
