@@ -28,14 +28,15 @@ const NavBar = () => {
 
   return (
     <Box
+      width={"100%"}
       id="nav-menu"
       position="sticky"
       top="0"
-      zIndex="100"
+      zIndex="1"
       bg={colorMode === "light" ? "white" : "#1d2022"}
       color={colorMode === "light" ? "black" : "white"}
     >
-      <Flex minWidth="max-content" p={5} alignItems="center" gap="30">
+      <Flex minWidth="max-content" p={5} alignItems="center" gap="0">
         <Box p="2">
           <Heading id="user-detail-name" size="md">
             {name}

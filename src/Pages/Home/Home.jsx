@@ -10,12 +10,12 @@ const Home = () => {
   return (
     <Box id="home">
       <Flex minWidth="max-content" gap="30">
-        <Intro id="user-detail-intro" />
+        <Intro />
       </Flex>
-      <About id="about" />
-      <Skills id="skills" />
-      <Projects id="projects" />
-      <ContactMe id="contact" />
+      <About />
+      <Skills />
+      <Projects />
+      <ContactMe />
     </Box>
   );
 };

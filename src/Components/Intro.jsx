@@ -11,17 +11,16 @@ import {
   IconButton,
   Link,
 } from "@chakra-ui/react";
-import {} from "@chakra-ui/react";
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function Intro() {
   return (
-    <Container id="user-detail-intro" maxW={"7xl"} w={"100%"}>
+    <Container id="user-detail-intro" maxW={"5xl"} w={"100%"}>
       <Stack
         align={"center"}
-        spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        spacing={{ base: 10, md: 10 }}
+        py={{ base: 10, md: 10 }}
         direction={{ base: "column", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
@@ -30,23 +29,8 @@ export default function Intro() {
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
-            <Text
-              as={"span"}
-              position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: "30%",
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "red.400",
-                zIndex: -1,
-              }}
-            >
-              Hi, I'am Neeraj 👋
-            </Text>
-            <br />
+            <Text>Hi, I'am Neeraj 👋</Text>
+            {/* <br /> */}
             <Text
               id="user-detail-intro"
               fontSize="3xl"
@@ -139,10 +123,10 @@ export default function Intro() {
         >
           <Box
             position={"relative"}
-            height={"300"}
+            height={"50%"}
             rounded={"2xl"}
             boxShadow={"2xl"}
-            width={"50%"}
+            width={"60%"}
             overflow={"hidden"}
           >
             <Image
