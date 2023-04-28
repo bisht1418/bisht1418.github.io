@@ -82,6 +82,7 @@ export default function ProjectCard({
               <Button
                 colorScheme="teal"
                 variant="outline"
+                className="project-deployed-link"
                 leftIcon={
                   <Image
                     borderRadius="full"
@@ -92,7 +93,7 @@ export default function ProjectCard({
                 }
               >
                 <Link
-                  className="project-github-link project-deployed-link"
+                  className="project-github-link "
                   href={ele.link}
                   isExternal
                 >

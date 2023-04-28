@@ -28,7 +28,7 @@
       "description":
         "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
       "tags": ["React", "Redux", "Chakra-Ui", "Axios"],
-      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/far-wealth-6961"},{"name":"Deployment","img":"link.png","link":"https://far-wealth-6961.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1oJqRHjZrwSW5NfyPouBuXzHfN2XauxTR/view"}]
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/glossy-bed-7436"},{"name":"Deployment","img":"link.png","link":"https://far-wealth-6961.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1oJqRHjZrwSW5NfyPouBuXzHfN2XauxTR/view"}]
     },
     {
       "imageUrl": "meanbuy.png",
