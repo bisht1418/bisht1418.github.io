@@ -38,6 +38,7 @@ const MySkills = () => {
             w="100%"
             h="100%"
             bg="#bee3f8"
+            textAlign={"center"}
             padding={4}
             borderRadius={30}
             transform="scale(1.0)"
@@ -66,6 +67,7 @@ const MySkills = () => {
           <GridItem
             w="100%"
             h="100%"
+            textAlign={"center"}
             bg="#bee3f8"
             padding={4}
             borderRadius={30}
@@ -95,6 +97,7 @@ const MySkills = () => {
             w="100%"
             h="100%"
             bg="#bee3f8"
+            textAlign={"center"}
             padding={4}
             borderRadius={30}
             transform="scale(1.0)"
@@ -128,6 +131,7 @@ const MySkills = () => {
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
+            textAlign={"center"}
             _hover={{
               transform: "scale(1.05)",
               border: "1px solid gray",
@@ -157,6 +161,7 @@ const MySkills = () => {
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
+            textAlign={"center"}
             _hover={{
               transform: "scale(1.05)",
               border: "1px solid gray",
@@ -186,6 +191,7 @@ const MySkills = () => {
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
+            textAlign={"center"}
             _hover={{
               transform: "scale(1.05)",
               border: "1px solid gray",
@@ -200,6 +206,7 @@ const MySkills = () => {
               alt="Dan Abramov"
               margin={"auto"}
               color={"whiteAlpha.100"}
+              textAlign={"center"}
             />
             <Text
               fontWeight={"bold"}
@@ -217,6 +224,7 @@ const MySkills = () => {
             bg="#bee3f8"
             padding={4}
             borderRadius={30}
+            textAlign={"center"}
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
@@ -248,6 +256,7 @@ const MySkills = () => {
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
+            textAlign={"center"}
             _hover={{
               transform: "scale(1.05)",
               border: "1px solid gray",
@@ -276,6 +285,7 @@ const MySkills = () => {
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
+            textAlign={"center"}
             _hover={{
               transform: "scale(1.05)",
               border: "1px solid gray",
@@ -305,6 +315,7 @@ const MySkills = () => {
             transform="scale(1.0)"
             transition="0.3s ease-in-out"
             border={"2px solid teal"}
+            textAlign={"center"}
             _hover={{
               transform: "scale(1.05)",
               border: "1px solid gray",
