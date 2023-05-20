@@ -47,7 +47,7 @@ export default function About() {
             </Heading>
             <Text
               id="user-detail-intro"
-              fontSize={{ base: "md", lg: "xl" }}
+              fontSize={{ base: "sm", lg: "18px" }}
               color={"black.500"}
             >
               Hey! I'm Neeraj Singh Bisht, Solution driven Full Stack Web

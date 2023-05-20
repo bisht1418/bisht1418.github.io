@@ -38,7 +38,7 @@ export default function Intro() {
           </Box>
 
           <Box>
-            <Text fontSize={20} mb={"10px"}>
+            <Text fontSize={"18px"} mb={"10px"}>
               As a motivated Full Stack Developer, I am passionate about
               creating high-quality software solutions that meet the needs of
               clients and end-users. With a strong desire to constantly improve
