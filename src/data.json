@@ -43,6 +43,16 @@
       "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/WeShopping"},{"name":"Deployment","img":"link.png","link":"https://tangerine-dango-46f506.netlify.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1pVUGDicz1Q72xl8iMTYB0uhQJFBqI2zw/view?usp=share_link"}]
     },
     {
+      "imageUrl": "moneymanager.png",
+      "project": "money manager",
+      "group": false,
+      "type": "E-commerce",
+      "description":
+        "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
+      "tags": ["React", "Redux", "Chakra-Ui", "Axios"],
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/MoneyManager"},{"name":"Deployment","img":"link.png","link":"https://far-wealth-6961.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1oJqRHjZrwSW5NfyPouBuXzHfN2XauxTR/view"}]
+    },
+    {
       "imageUrl": "meanbuy.png",
       "project": "mean buy",
       "group": false,
