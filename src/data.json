@@ -8,7 +8,7 @@
         "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
       "tags": ["React", "Redux", "Chakra-UI", "Axios", "Firebase"],
 
-      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/EzyShop"},{"name":"Deployment","img":"link.png","link":"https://my-app-lake-iota.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1UZfA5utXKk4dARHrl9DoJjvoE6IT2wzJ/view?usp=share_link"}]
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/EzyShop"},{"name":"Deployment","img":"link.png","link":"https://my-app-lake-iota.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://youtu.be/XD5me-LzpWQ"}]
     },
     {
       "imageUrl": "healthcube.png",
@@ -18,7 +18,7 @@
       "description":
         "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
       "tags": ["React", "Chakra UI", "Node", "Express", "Mongoose", "MongoDB"],
-      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/Health-Cube"},{"name":"Deployment","img":"link.png","link":"https://healthcube.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1iLcv33ZW6u2lit7sHvnRT-k4CwaH167p/view?usp=share_link"}]
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/Health-Cube"},{"name":"Deployment","img":"link.png","link":"https://healthcube.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://youtu.be/jH08octTfiQ"}]
 
     },
     {
@@ -29,7 +29,7 @@
       "description":
         "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
       "tags": ["React", "Tailwind","Typescript", "Node", "Express", "Mongoose", "MongoDB"],
-      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/Fitness-Buddy"},{"name":"Deployment","img":"link.png","link":"https://n-sagarbisht07.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1iLcv33ZW6u2lit7sHvnRT-k4CwaH167p/view?usp=share_link"}]
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/Fitness-Buddy"},{"name":"Deployment","img":"link.png","link":"https://n-sagarbisht07.vercel.app/"},{"name":"Demo","img":"video.png","link":"https://youtu.be/wZdq97g2O9A"}]
 
     },
     {
