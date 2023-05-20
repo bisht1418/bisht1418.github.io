@@ -40,7 +40,7 @@
       "description":
         "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
       "tags": ["HTML", "CSS", "JavaScript", "JSON"],
-      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/WeShopping"},{"name":"Deployment","img":"link.png","link":"https://tangerine-dango-46f506.netlify.app/"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1pVUGDicz1Q72xl8iMTYB0uhQJFBqI2zw/view?usp=share_link"}]
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/WeShopping"},{"name":"Deployment","img":"link.png","link":"https://tangerine-dango-46f506.netlify.app/"},{"name":"Demo","img":"video.png","link":"https://youtu.be/1sJ0AjFXeA4"}]
     },
     {
       "imageUrl": "moneymanager.png",
@@ -60,7 +60,7 @@
       "description":
         "An Ecommerce website that has the features like buy, Add to cart, authentication and authorization for single user with basic CRUD operations.",
       "tags": ["HTML", "CSS", "JavaScript", "JSON"],
-      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/MeanBuy"},{"name":"Deployment","img":"link.png","link":"https://cartxpress.netlify.app/index.html"},{"name":"Demo","img":"video.png","link":"https://drive.google.com/file/d/1AlncXF8qkEJTuLoNY56ERWSyQDS1dYGP/view?usp=share_link"}]
+      "linkName" : [{"name":"Github", "img":"github.png","link":"https://github.com/bisht1418/MeanBuy"},{"name":"Deployment","img":"link.png","link":"https://cartxpress.netlify.app/index.html"},{"name":"Demo","img":"video.png","link":"https://youtu.be/oXvKzdQY3TA"}]
 
     }
   ]
