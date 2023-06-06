@@ -43,7 +43,7 @@ const NavBar = () => {
           </Heading>
         </Box>
         <Spacer />
-        <Box display={{ base: "none", md: "block" }}>
+        <Box display={{ base: "none", lg: "block" }}>
           <Flex alignItems="center" gap="10">
             <Box p="2">
               <Button colorScheme="black" variant="link">
@@ -101,7 +101,8 @@ const NavBar = () => {
             </Box>
           </Flex>
         </Box>
-        <Box display={{ base: "block", md: "none" }}>
+
+        <Box display={{ base: "block", lg: "none" }}>
           <IconButton
             icon={<HamburgerIcon />}
             variant="ghost"
