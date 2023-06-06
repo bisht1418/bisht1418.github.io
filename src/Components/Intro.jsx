@@ -29,7 +29,7 @@ export default function Intro() {
             </Text>
 
             <Text color={"teal"} fontWeight={700}>
-              I,m Neeraj Singh Bisht
+              I am Neeraj Singh Bisht
             </Text>
 
             <Text color={"red.400"} fontWeight={700} marginBottom="10px">
@@ -114,8 +114,13 @@ export default function Intro() {
             className="home-img"
             src={"programmer01.avif"}
             alt="React Logo"
-            height={"100%"}
+            height={"auto"}
             width={"100%"}
+            style={{
+              maxWidth: "80%",
+              height: "auto",
+              margin: "auto",
+            }}
           />
         </GridItem>
       </Grid>
