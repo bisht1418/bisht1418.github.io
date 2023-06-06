@@ -22,6 +22,7 @@ export default function About() {
             <Heading fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
               <Text
                 as={"span"}
+                color={"blue.400"}
                 position={"relative"}
                 _after={{
                   content: "''",
@@ -33,29 +34,23 @@ export default function About() {
                   bg: "blue.400",
                   zIndex: -1,
                 }}
+                textDecoration={"underline"}
               >
-                I'm Neeraj Bisht from
+                Hey! I'm Neeraj Bisht
               </Text>
-              <br />{" "}
-              <Text color={"blue.400"} as={"span"}>
-                Pauri, Uttarakhand
-              </Text>{" "}
-              <br />{" "}
-              <Text color={"teal.400"} as={"span"}>
-                Full Stack Developer
-              </Text>{" "}
+              <br />
             </Heading>
             <Text
               id="user-detail-intro"
-              fontSize={{ base: "sm", lg: "18px" }}
+              fontSize={{ base: "18px", lg: "18px" }}
               color={"black.500"}
             >
-              Hey! I'm Neeraj Singh Bisht, Solution driven Full Stack Web
-              Developer proficient in React, Express, MongoDB, NodeJS, HTML, CSS
-              and JavaScript. Highly passionate about building web applications
-              and confident enough to learn new things with a curious mind, an
-              absolute passion for coding and the ability to write clean and
-              efficient code. Looking forward to taking up a challenging and
+              A solution-driven Full Stack Web Developer proficient in React,
+              Express, MongoDB, NodeJS, HTML, CSS, and JavaScript. I am highly
+              passionate about building web applications and confident enough to
+              learn new technology with a curious mind. I have an absolute
+              passion for coding and the ability to write clean and efficient
+              code. I am looking forward to taking up a challenging and
               responsible role within an organization as a full-stack web
               developer.
             </Text>
@@ -69,9 +64,14 @@ export default function About() {
                 boxShadow={"2xl"}
                 alt={"Neeraj Singh Bisht"}
                 objectFit={"cover"}
-                maxW="65%"
-                w="100%"
+                maxW="50%"
+                w="70%"
                 h="auto"
+                style={{
+                  maxWidth: "80%",
+                  height: "auto",
+                  margin: "auto",
+                }}
                 src={"https://avatars.githubusercontent.com/u/112753461?v=4"}
               />
             </Flex>
